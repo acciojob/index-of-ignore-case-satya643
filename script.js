@@ -1,5 +1,9 @@
 function indexOfIgnoreCase(s1, s2) {
-  // write your code here
+  // If s2 is an empty string, return 0 (same as String.indexOf behavior)
+  if (s2 === "") return 0;
+  
+  // Convert both strings to lowercase for case-insensitive comparison
+  return s1.toLowerCase().indexOf(s2.toLowerCase());
 }
 
 // Please do not change the code below
